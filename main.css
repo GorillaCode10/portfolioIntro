@@ -306,3 +306,9 @@ section{
     width: 280px;
 }
 }
+@media only screen and (max-width:480px) {
+.btn:nth-child(3) {
+  margin:15px 9px;
+}
+
+}
