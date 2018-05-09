@@ -133,7 +133,7 @@ body {
     left: -100%;
   }
 }
-
+/* 
 @media (max-width: 480px) {
   .fullscreen-bg {
     background: url("proBG-O.jpg") center center/cover no-repeat;
@@ -145,7 +145,7 @@ body {
   .fullscreen-bg-video {
     display: none;
   }
-}
+} */
 
 .home-content {
   width: 100%;
@@ -403,6 +403,5 @@ section {
   }
   .home-content h2 {
     font-size: 25px;
-    margin: 0 0;
   }
 }
