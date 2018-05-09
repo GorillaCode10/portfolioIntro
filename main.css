@@ -136,7 +136,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .fullscreen-bg {
     background: url("proBG.gif") center center/cover no-repeat;
     -webkit-background-size: cover;
