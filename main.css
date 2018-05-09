@@ -9,6 +9,83 @@ body {
   padding: 0;
 }
 
+#typed-strings {
+  display: none;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+.typed p {}
+
+.highlight {
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+  background: #111;
+}
+
+/* blue highlights */
+
+.highlight.blue {
+  background: #0100ff;
+}
+
+/* green highlights */
+
+.highlight.green {
+  background: #00b388;
+}
+
+/* red highlights */
+
+.highlight.red {
+  background: #ff322e;
+}
+
+/* yellow highlights */
+
+.highlight.yellow {
+  background: #ffcc2f;
+}
+
+/* blue highlights */
+
+.btn-1.blue rect {
+  stroke: #0100ff;
+}
+
+/* green highlights */
+
+.btn-1.green rect {
+  stroke: #00b388;
+}
+
+/* red highlights */
+
+.btn-1.red rect {
+  stroke: #ff322e;
+}
+
+.linkedin a:hover {
+  box-shadow: inset 0 0 0 4px #4875B4 !important;
+}
+
+.github a:hover {
+  box-shadow: inset 0 0 0 4px #c9510c !important;
+}
+
+.codepen a:hover {
+  box-shadow: inset 0 0 0 4px #ae63e4 !important;
+}
+
+.instagram a:hover {
+  box-shadow: inset 0 0 0 4px #e1306c !important;
+}
+
 .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -30,12 +107,39 @@ body {
   z-index: 1;
 }
 
-.fullscreen-bg-video {
+.fullscreen-bg iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .fullscreen-bg iframe {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .fullscreen-bg iframe {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url("proBG-O.jpg") center center/cover no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .fullscreen-bg iframe {
+    display: none;
+  }
 }
 
 .home-content {
@@ -54,11 +158,11 @@ body {
 .home-content h1 {
   color: white;
   padding: 0 10px;
-  font: 600 48px "Fjalla One", sans-serif;
+  font: 700 70px "Fjalla One", sans-serif;
 }
 
-.home-content h2 {
-  font: 30px "Oswald", sans-serif;
+h2 {
+  font: 700 65px "Fjalla One", sans-serif;
   color: white;
   display: block;
   margin: 0 0;
@@ -70,33 +174,7 @@ body {
   color: white;
   display: block;
   margin: 30px 0;
-}
-
-@media (min-aspect-ratio: 16 / 9) {
-  .fullscreen-bg-video {
-    height: 300%;
-    top: -100%;
-  }
-}
-
-@media (max-aspect-ratio: 16 / 9) {
-  .fullscreen-bg-video {
-    width: 300%;
-    left: -100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .fullscreen-bg {
-    background: url("proBG-O.jpg") center center/cover no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  .fullscreen-bg-video {
-    display: none;
-  }
+  letter-spacing: .5px;
 }
 
 span.cursor {
@@ -241,6 +319,7 @@ section {
 
 .social li a {
   font-size: 25px;
+  letter-spacing: .5px;
   display: inline-block;
   float: left;
   width: 73px;
@@ -268,6 +347,11 @@ section {
   -ms-box-shadow: inset 0 0 0 4px #fff;
   box-shadow: inset 0 0 0 4px #fff;
   color: #fff;
+}
+
+.tippy-popper {
+  font: 20px "Fjalla One", sans-serif;
+  letter-spacing: .5px;
 }
 
 @media only screen and (max-width:767px) {
