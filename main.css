@@ -105,6 +105,13 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .fullscreen-bg iframe {
@@ -129,9 +136,9 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .fullscreen-bg {
-    background: url("proBG-O.jpg") center center/cover no-repeat;
+    background: url("proBG.gif") center center/cover no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
