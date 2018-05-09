@@ -368,15 +368,15 @@ section {
     margin: 5px 0;
   }
   .home-content h2 {
-    font-size: 21px;
+    font-size: 30px;
     margin: 0 0;
   }
   .home-content h3 {
-    font-size: 14px;
+    font-size: 18px;
     margin: 25px 5px 15px 5px;
   }
   .btn {
-    font-size: 12px;
+    font-size: 16px;
     max-width: 120px;
     display: inline-block;
     margin: 0 9px;
