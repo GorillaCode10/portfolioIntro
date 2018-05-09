@@ -105,16 +105,14 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  background: rgba(0, 0, 0, 0.7);
-  /* z-index: 1;
-  -webkit-filter: blur(5px);
+  /* -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px); */
 }
 
-.fullscreen-bg iframe {
+.fullscreen-bg-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -123,14 +121,14 @@ body {
 }
 
 @media (min-aspect-ratio: 16 / 9) {
-  .fullscreen-bg iframe {
+  .fullscreen-bg-video {
     height: 300%;
     top: -100%;
   }
 }
 
 @media (max-aspect-ratio: 16 / 9) {
-  .fullscreen-bg iframe {
+  .fullscreen-bg-video {
     width: 300%;
     left: -100%;
   }
@@ -144,7 +142,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
   }
-  .fullscreen-bg iframe {
+  .fullscreen-bg-video {
     display: none;
   }
 }
